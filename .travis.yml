@@ -1,13 +1,13 @@
 before_script:
-  - nvm install 6.4; npm install; npm install -g gulp; node --version
+  - npm install; npm install -g gulp; node --version
 script: gulp test
-lauguage: node_js
+language: node_js
+node_js:
+  - "6.4"
+  - "5.11"
 env: 
   - PORT=7777
-node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
+
 
 
 
