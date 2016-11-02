@@ -4,9 +4,10 @@ script: gulp test
 lauguage: node_js
 env: 
   - PORT=7777
-node_js: 
-  - "5.1"
-  - "4"
+node_js:
+  - "6"
+  - "6.1"
+  - "5.11"
 
 
 
