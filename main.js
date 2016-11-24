@@ -15,3 +15,4 @@ app.listen(port,()=>{
 	//console.log(`Running webhook listener...`);
 	console.log(`App listening on port ${port}`);
 }) ;
+require('./webhook.js')(app);
