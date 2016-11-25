@@ -1,6 +1,6 @@
 before_script:
-    - npm install; npm install -g gulp
-script: gulp test
+    - npm install; npm install -g gulp; npm install -g jasmine
+script: npm test
 language: node_js
 env:
     - PORT=7777
