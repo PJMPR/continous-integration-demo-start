@@ -23,7 +23,7 @@ describe("Player", function() {
     expect(player.currentlyPlayingSong).toEqual(errorSong);
 
     //demonstrates use of custom matcher
-    expect(player).toBePlaying(song);
+    expect(player).toBePlaying(errorSong);
   });
 
   describe("when song has been paused", function() {
