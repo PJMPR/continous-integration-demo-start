@@ -10,21 +10,21 @@ describe("Player", function() {
     errorSong = new Song();
   });
 
-  // it("should be able to play a Song", function() {
-  //   player.play(song);
-  //   expect(player.currentlyPlayingSong).toEqual(song);
-
-  //   //demonstrates use of custom matcher
-  //   expect(player).toBePlaying(song);
-  // });
-
   it("should be able to play a Song", function() {
     player.play(song);
-    expect(player.currentlyPlayingSong).toEqual(errorSong);
+    expect(player.currentlyPlayingSong).toEqual(song);
 
     //demonstrates use of custom matcher
-    expect(player).toBePlaying(errorSong);
+    expect(player).toBePlaying(song);
   });
+
+  // it("should be able to play a Song", function() {
+  //   player.play(song);
+  //   expect(player.currentlyPlayingSong).toEqual(errorSong);
+
+  //   //demonstrates use of custom matcher
+  //   expect(player).toBePlaying(errorSong);
+  // });
 
   describe("when song has been paused", function() {
     beforeEach(function() {
